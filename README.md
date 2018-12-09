@@ -6,6 +6,9 @@ This was created as a computer science undergraduate senior project at Case West
 ## Credits
 
 Anna Burkhart - Primary frontend developer
+
 Noah Crowley - APIs design, frontend developer
+
 John Donnelly - Application manager, frontend developer
+
 Justin Green - Neural networking algorithms developer
