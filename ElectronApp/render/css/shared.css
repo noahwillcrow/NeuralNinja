@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeue.ttf');
+}
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+body {
+    font-family: 'HelveticaNeue';
+}
+
+.overlay {
+	position: absolute;
+	height: calc(100% - 16px);
+	width: calc(100% - 16px);
+	background-color: rgba(255, 255, 255, 0.92);
+}
+
+.overlay.dark {
+    background-color: rgba(0, 0, 0, 0.92);
+}
+
+.overlay .loading-icon {
+	position: absolute;
+	background-image: url('../images/loading.png');
+	background-color: transparent;
+    animation: spin 2s linear infinite;
+
+	top: 50%;
+	left: 50%;
+	margin-top: -30px;
+	margin-left: -30px;
+	height: 60px;
+	width: 60px;
+}
+
+.hide {
+	display: none !important;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #00aaff;
+    border: none;
+	color: #FFFFFF;
+    cursor: pointer;
+	font-family: 'HelveticaNeue';
+    font-size: 15px;
+    line-height: 15px;
+    height: 15px;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+	text-align: center;
+    width: 100px;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    background-color: #0088cc;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button.gray, .button.grey {
+    background-color: #88888a;
+}
+
+.button.gray:hover, .button.grey:hover {
+    background-color: #6a6a6f;
+}
+
+.button.red {
+    background-color: #ea3c3c;
+}
+
+.button.red:hover {
+    background-color: #b12e2e;
+}
+
+.button.forward:hover span {
+    padding-right: 25px;
+}
+
+.button.forward span:after {
+    content: '\00bb';
+    position: absolute;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button.forward:hover span:after {
+    right: 0;
+}
+
+.button.backward:hover span {
+    padding-left: 25px;
+}
+
+.button.backward span:before {
+    content: '\00ab';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+
+.button.backward:hover span:before {
+    left: 0px;
+}
+
+.button.big {
+	font-size: 28px;
+	padding: 20px;
+}
+
+.button.wide {
+    width: 160px;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+  
+.center-container {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.title {
+    font-family: sans-serif;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.input {
+    padding-right: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.float-left { 
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.modal {
+    background-color: white;
+    box-shadow: #b2b2b2 0 0 4px 1px;
+    padding: 8px;
+    position: absolute;
+    top: calc(50% - 16px);
+    left: calc(50% - 16px);
+}

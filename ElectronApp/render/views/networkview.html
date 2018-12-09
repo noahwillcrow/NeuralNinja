@@ -1,0 +1,100 @@
+<!-- HTML for network visualization page -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>NEURAL NINJA - Neural Network Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="../css/shared.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../css/networkcss.css" media="screen" />
+</head>
+
+<body>
+    <div id="loading-overlay" class="overlay">
+        <div class="loading-icon"></div>
+    </div>
+
+    <h1 class="title" id="network-title">Network</h1>
+
+    <div id="save-button" class="button gray float-left">
+        <span>Save</span>
+    </div>
+
+    <a href="trainer.html">
+        <div id='train-button' class="button forward float-right">
+            <span>Train</span>
+        </div>
+    </a>
+
+    <div id="network-window">
+        <div id="network-controls">
+        </div>
+
+        <canvas id="neural-network-canvas"></canvas>
+    </div>
+
+    <!--Templates-->
+    <template id="layer-controls-template">
+        <div class="layer-controls">
+            <input type="text" class="layer-size-input" pattern="[0-9]" />
+            <div class="increment-decrement-container">
+                <div type="button" class="increment-button"> + </div>
+                <div type="button" class="decrement-button"> - </div>
+            </div>
+            <div class="structure-buttons">
+                <div class="structure-buttons-filler"></div>
+                <div class="remove-layer-button"> + </div>
+                <div class="add-layer-button"> + </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="layer-create-template">
+        <div class="layer-create-options">
+            <label>
+                Activation type:
+            </label>
+            <select class="new-layer-activation-type-select">
+                <option value="sigmoid">Sigmoid</option>
+                <option value="relu">ReLU</option>
+            </select>
+
+            <label>
+                Layer type:
+            </label>
+            <select class="new-layer-type-select">
+                <option value="fullyConnected">Fully connected</option>
+                <option value="conv1d">Convolutional 1D</option>
+            </select>
+
+            <div class="layer-type-specific-options fullyConnected">
+                <label>
+                    Layer size:
+                </label>
+                <input class="new-fully-connected-layer-size-input" type="text" pattern="[0-9]" value="8" />
+            </div>
+
+            <div class="layer-type-specific-options conv1d hide">
+                <label>
+                    Kernel size:
+                </label>
+                <input class="new-conv1d-kernel-size-input" type="text" pattern="[0-9]" value="4" />
+            </div>
+
+            <br />
+            <br />
+
+            <div class="create-layer-button button center clearfix">
+                Create
+            </div>
+        </div>
+    </template>
+
+    <!--Scripts-->
+    <script type="text/javascript" src="../js/resources.js"></script>
+    <script type="text/javascript" src="../js/mainThreadBridge.js"></script>
+    <script type="text/javascript" src="../js/functions.js"></script>
+    <script type="text/javascript" src="../js/modals.js"></script>
+    <script type="text/javascript" src="../js/controllers/networkViewController.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "neural-ninja",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "build": {
+    "extraResources": "python"
+  },
+  "scripts": {
+    "start": "electron .",
+    "test:e2e": "node node_modules/mocha/bin/mocha tests/test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "electron": "^2.0.10",
+    "mocha": "^5.2.0",
+    "spectron": "^5.0.0"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "python-shell": "^1.0.4"
+  }
+}

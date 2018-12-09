@@ -1,0 +1,74 @@
+<!-- HTML for training page -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>NEURAL NINJA - Neural Network Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="../css/shared.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../css/trainer.css" media="screen" />
+</head>
+
+<body>
+    <div id="loading-overlay" class="overlay hide">
+        <div class="loading-icon"></div>
+    </div>
+
+    <h1 class="title">Network Training</h1>
+
+    <a href="networkview.html">
+        <div class="button red backward">
+            <span>Back</span>
+        </div>
+    </a>
+
+    <div class="center file-choice-box">
+        <div id="input-file-path-display" class="file-path-display float-left">No file chosen...</div>
+        <div id="input-file-button" class="button gray wide float-right">
+            <span>Select input file</span>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="center file-choice-box">
+        <div id="target-output-file-path-display" class="file-path-display float-left">No file chosen...</div>
+        <div id="target-output-file-button" class="button gray wide float-right">
+            <span>Select target output file</span>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="center setting-input-box">
+        <label for="batch-size" class="float-left">Batch size:</label>
+        <input type="text" id="batch-size" pattern="[0-9]" value="1" class="float-right" />
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="center setting-input-box">
+        <label for="num-epochs" class="float-left">Number of epochs:</label>
+        <input type="text" id="num-epochs" pattern="[0-9]" value="10000" class="float-right" />
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="center setting-input-box">
+        <label for="learning-rate" class="float-left">Learning rate:</label>
+        <input type="text" id="learning-rate" pattern="[\.0-9]" value="0.05" class="float-right" />
+        <div class="clearfix"></div>
+    </div>
+
+    <div id="train-button" class="button big wide center forward">
+        <span>Train</span>
+    </div>
+
+    <div class="center-container">
+        <output id="result"></output>
+    </div>
+
+    <!--Scripts-->
+    <script type="text/javascript"></script>
+    <script type="text/javascript" src="../js/resources.js"></script>
+    <script type="text/javascript" src="../js/mainThreadBridge.js"></script>
+    <script type="text/javascript" src="../js/functions.js"></script>
+    <script type="text/javascript" src="../js/controllers/trainerController.js"></script>
+</body>
+</html>

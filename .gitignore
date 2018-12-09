@@ -1,0 +1,7 @@
+.vscode/*
+*.pyc
+*.pylintrc
+ElectronApp/node_modules/
+ElectronApp/demofile.txt
+*.DS_Store
+*.bin

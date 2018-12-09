@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>NEURAL NINJA - Neural Network Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="../css/shared.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../css/creationpage.css" media="screen" />
+</head>
+
+<body>
+    <h1 class="title">Create</h1>
+
+    <a href="index.html">
+        <div id="back-button" class="button red backward">
+            <span>Back</span>
+        </div>
+    </a>
+
+    <div class="input-dropdown">Input Nodes:
+        <select id="input-dropdown">
+        </select>
+    </div>
+
+    <div class="output-dropdown"> Output Nodes:
+        <select id="output-dropdown">
+        </select>
+    </div>
+
+    <div id="create-button" class="button forward big center">
+        <span>Create</span>
+    </div>
+
+    <!--Scripts-->
+    <script type="text/javascript" src="../js/mainThreadBridge.js"></script>
+    <script type="text/javascript" src="../js/functions.js"></script>
+    <script type="text/javascript" src="../js/controllers/creationPageController.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+#network-window {
+    width: 100%;
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+#network-controls {
+    font-size: 0;
+    margin-bottom: 25px;
+}
+
+.layer-controls {
+    display: inline-block;
+    width: 200px;
+    margin: 0;
+}
+.layer-controls:first-of-type {
+    margin-left: -15px;
+}
+
+.layer-size-input {
+    box-sizing: border-box;
+    height: 25px;
+    line-height: 25px;
+    width: 120px;
+    margin-left: 15px;
+}
+
+.increment-button, .decrement-button {
+    background: #c8c6c6;
+    cursor: pointer;
+    display: block;
+    height: 50%;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    user-select: none;
+}
+
+.increment-button:hover, .decrement-button:hover {
+    background-color: #b8b6b6;
+}
+
+.increment-decrement-container {
+    vertical-align: top;
+    display: inline-block;
+    padding: 0px;
+    height: 25px;
+    width: 30px;
+    border-width: 0px;
+}
+
+.structure-buttons {
+    display: block;
+    height: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.structure-buttons-filler {
+    height: 20px;
+    display: inline-block;
+}
+
+.add-layer-button, .remove-layer-button {
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "HelveticaNeue";
+    font-size: 14px;
+    line-height: 12px;
+    height: 14px;
+    padding: 2px 0;
+    text-align: center;
+    user-select: none;
+    vertical-align: middle;
+    width: 18px;
+}
+
+.add-layer-button {
+    border: 1px solid #00aaff;
+    color: #00aaff;
+    margin-left: 80px;
+}
+.add-layer-button:hover {
+    background-color: #00aaff;
+    color: white;
+}
+.add-layer-button.no-remove {
+    margin-left: 180px;
+}
+
+.remove-layer-button {
+    border: 1px solid rgb(175, 60, 60);
+    color: rgb(175, 60, 60);
+    margin-left: 80px;
+    transform: rotate(45deg);
+}
+.remove-layer-button:hover {
+    background-color: rgb(175, 60, 60);
+    color: white;
+}
+
+#neural-network-canvas {
+    cursor: pointer;
+    display: block;
+}
+
+.layer-create-options {
+    width: 300px;
+}
+
+.layer-create-options select, .layer-create-options input, .layer-create-options label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.layer-create-options label {
+    float: left;
+    width: 120px;
+}
+
+.layer-create-options select, .layer-create-options input {
+    box-sizing: border-box;
+    float: right;
+    width: 150px;
+}

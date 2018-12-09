@@ -1,0 +1,33 @@
+.file-choice-box {
+    width: 400px;
+}
+
+.file-path-display {
+    font-family: "HelveticaNeue";
+    font-size: 11px;
+    line-height: 11px;
+    height: 11px;
+    margin-left: 10px;
+    padding: 12px 0;
+    overflow: hidden;
+    text-align: left;
+    width: 200px;
+}
+
+.setting-input-box {
+    font-family: "HelveticaNeue";
+    font-size: 12px;
+    width: 400px;
+}
+
+.setting-input-box label {
+    box-sizing: border-box;
+    margin: 0 0 10px 10px;
+    width: 200px;
+}
+
+.setting-input-box input {
+    box-sizing: border-box;
+    margin: 0 10px 10px 0;
+    width: 180px;
+}

@@ -1,0 +1,16 @@
+.title {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+.intro {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+}
+
+.neural-icon {
+    padding-bottom: 20px;
+    padding-top: 25px;
+}
