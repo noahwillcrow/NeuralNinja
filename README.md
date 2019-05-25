@@ -12,3 +12,5 @@ Noah Crowley - APIs design, frontend developer
 John Donnelly - Application manager, frontend developer
 
 Justin Green - Neural networking algorithms developer
+
+
